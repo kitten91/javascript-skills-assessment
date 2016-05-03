@@ -195,21 +195,15 @@ document.getElementById("prevent-form-submission-button").addEventListener("clic
 
 <script>
 
- var str = function reverseString() {
-   var msg = "Porcupines are cute";
-   // var newMsg = return msg.split("").reverse().join("");
+var msg = "Porcupines are cute";
+var newMsg = msg.split('').reverse().join('');
 
-//    // do some stuff here to reverse that string into a new variable
-//    var newMsg = "This should be the reversed string";
-//
-   alert(return msg.split("").reverse().join(""););
- };
+document.getElementById('reverse-string-button').addEventListener('click'
+  , function(event){
+    event.preventDefault()
+    alert(newMsg)
+});
 
-// Here's a stub of event stuff you could use
-//
-
- var button = document.getElementById('reverse-string-button');
- button.addEventListener('click', str);
 </script>
 
 
