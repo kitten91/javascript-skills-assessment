@@ -305,8 +305,14 @@ $('#kittenz-rule').click(function(){
   <input type="button" id="make-a-porcupine" value="I Want a Porcupine!">
 </fieldset>
 
+<script src="https://code.jquery.com/jquery.js"></script>
 <script>
-  // put your code here
+
+$( "#make-a-porcupine" ).click(function() {
+  $( "#cute-porcupine-image" ).fadeIn( 4000, function() {
+  });
+});
+
 </script>
 
 <div class="hint">
