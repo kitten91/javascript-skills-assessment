@@ -194,22 +194,22 @@ document.getElementById("prevent-form-submission-button").addEventListener("clic
 </fieldset>
 
 <script>
-//  Here's a stub of a function you can use!
 
-//  function reverseString() {
-//    var msg = "Porcupines are cute";
-//
+ var str = function reverseString() {
+   var msg = "Porcupines are cute";
+   // var newMsg = return msg.split("").reverse().join("");
+
 //    // do some stuff here to reverse that string into a new variable
 //    var newMsg = "This should be the reversed string";
 //
-//    alert(newMsg);
-//  }
+   alert(return msg.split("").reverse().join(""););
+ };
 
 // Here's a stub of event stuff you could use
 //
 
-//  var button = document.getElementById('reverse-string-button');
-//  button.addEventListener('click', reverseString);
+ var button = document.getElementById('reverse-string-button');
+ button.addEventListener('click', str);
 </script>
 
 
@@ -232,8 +232,15 @@ document.getElementById("prevent-form-submission-button").addEventListener("clic
   <input type="button" class="tricky-to-find" value="Pop-Up Please!">
 </fieldset>
 
+<script src="https://code.jquery.com/jquery.js"></script>
 <script>
-  // code here for above problem
+
+function alertMe(evt) {
+  alert("Great job!");
+}
+
+$(".tricky-to-find").click(alertMe);
+
 </script>
 
 <div class="hint">
@@ -259,6 +266,7 @@ document.getElementById("prevent-form-submission-button").addEventListener("clic
        alt="Adorbz" id="kittenz-rule">
 </fieldset>
 
+<script src="https://code.jquery.com/jquery.js"></script>
 <script>
   // put your code here
 </script>
